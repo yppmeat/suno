@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunoで作った曲</title>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    table {
+      max-width: 750px;
+      border-collapse: collapse;
+    }
+    td {
+      text-align: center;
+      border: 1px solid grey;
+    }
+  </style>
+</head>
+<body>
+  <p><a href="https://suno.com" target="_blank">Suno</a>で作った曲を共有します。個人的な好みによりハードコアが多めです。<br>これを機にハードコアを好きになってもいいでしょう。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>プロンプト</th><th>音声</th><th>個人的好き度</th><th>追加日付</th>
+      </tr>
+    </thead>
+    <tbody id="table"></tbody>
+  </table>
+</body>
+</html>
