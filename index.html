@@ -9,14 +9,54 @@
     body {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    p {
+      max-width: 750px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      margin-bottom: 20px;
     }
     table {
       max-width: 750px;
+      width: 100%;
       border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
     }
-    td {
+    th, td {
       text-align: center;
-      border: 1px solid grey;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f8f8f8;
+      font-weight: bold;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+    audio {
+      height: 30px;
+    }
+    audio::-webkit-media-controls {
+      background: light-dark(rgb(241, 243, 244), rgba(59, 59, 59, 0.9));
+      border-radius: 4px;
+    }
+    footer {
+      width: 100%;
+      text-align: end;
     }
   </style>
 </head>
@@ -30,5 +70,6 @@
     </thead>
     <tbody id="table"></tbody>
   </table>
+  <footer>Styled by GPT-4o</footer>
 </body>
 </html>
